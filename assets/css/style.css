@@ -33,3 +33,72 @@
 .nav-link:hover i.bi-cart3 {
   transform: scale(1.2);
 }
+
+/*footer */
+/* Footer general */
+footer {
+  background-color: #212529;
+  color: #ffffff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+/* Títulos de columnas */
+footer h5 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Espaciado entre elementos de lista */
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Enlaces del footer */
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Hover en enlaces */
+footer a:hover {
+  color: #fd0dd1;
+  text-decoration: underline;
+}
+
+/* Hover en íconos */
+footer a:hover i {
+  color: #fd0dd1;
+}
+
+/* Íconos del footer */
+footer i {
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+
+/* Línea divisoria */
+footer hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Texto final */
+footer p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  footer .row {
+    text-align: center;
+  }
+
+  footer .col-md-4 {
+    margin-bottom: 1.5rem;
+  }
+}
