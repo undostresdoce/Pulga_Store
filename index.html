@@ -1,13 +1,181 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PulgaStore</title>
-      <link rel="stylesheet" href="assets/css/style.css" />
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulgaStore</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
   <script src="assets/js/script.js" defer></script>
 </head>
+
 <body>
-    
+
+  <header class="container text-center my-4">
+    <h1 class="display-4">PulgaStore</h1>
+  </header>
+
+  <main class="container">
+
+    <!-- Carousel / Boostrap -->
+    <section>
+      <div id="carouselMochilas" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselMochilas" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselMochilas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselMochilas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselMochilas" data-bs-slide-to="3" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active car-item" data-bs-interval="10000">
+            <img src="assets/img/carousel body/Mochilas treakking.jpg" class="d-block w-100 car-img" alt="Mochilas 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Trekking 40% OFF</h5>
+              <p>En productos seleccionados</p>
+              <a href="MochilasTrekking.html" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+          <div class="carousel-item car-item" data-bs-interval="10000">
+            <img src="assets/img/carousel body/Mochila tren.webp" class="d-block w-100 car-img" alt="Mochilas 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Casuales 30% OFF</h5>
+              <p>En productos seleccionados</p>
+              <a class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+          <div class="carousel-item car-item" data-bs-interval="2000">
+            <img src="assets/img/carousel body/Mochila escolares.webp" class="d-block w-100 car-img" alt="Mochilas 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Kids 20% OFF</h5>
+              <p>En productos seleccionados</p>
+              <a class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+          <div class="carousel-item car-item">
+            <img src="assets/img/carousel body/Mochilas avion.PNG" class="d-block w-100 car-img" alt="Mochilas 4">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>De cabina 10% OFF</h5>
+              <p>En productos seleccionados</p>
+              <a class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMochilas" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMochilas" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+      </div>
+    </section>
+    <br>
+
+    <!-- Sección presentación de la empresa / Html -->
+    <section class="mb-5">
+      <h2 class="text-center">¿Quiénes Somos?</h2>
+      <p>
+        Pulga Store es una marca joven, dinámica y comprometida con ofrecer productos de calidad a través de una
+        experiencia de compra sencilla, confiable y cercana. Nacida del espíritu emprendedor de un grupo de
+        jóvenes, Pulga Store combina energía, creatividad y atención personalizada para conectar con sus
+        clientes y satisfacer sus necesidades. Con un enfoque digital y trato directo, la marca se posiciona
+        como una opción fresca y accesible para quienes buscan comodidad, buen servicio y productos
+        seleccionados con dedicación.
+      </p>
+    </section>
+    <!-- Sección categoria de productos / Boostrap -->
+    <section>
+      <h2 class="text-center">Categorias</h2>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card">
+            <img src="assets/img/productos body/Mochila Trekking.png" class="card-img-top card-img"
+              alt="Producto Trekking">
+            <div class="card-body">
+              <h5 class="card-title text-center">Trekking</h5>
+              <a href="MochilasTrekking.html" class="btn btn-secondary w-100">Ver productos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card">
+            <img src="assets/img/productos body/Mochila kids.png" class="card-img-top card-img" alt="Producto Kids">
+            <div class="card-body">
+              <h5 class="card-title text-center">Kids</h5>
+              <a href="#" class="btn btn-secondary w-100">Ver productos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card">
+            <img src="assets/img/productos body/Mochila con ruedas.png" class="card-img-top card-img"
+              alt="Producto Ruedas">
+            <div class="card-body">
+              <h5 class="card-title text-center">Con ruedas</h5>
+              <a href="#" class="btn btn-secondary w-100">Ver productos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card">
+            <img src="assets/img/productos body/Mochila de cabina.webp" class="card-img-top card-img"
+              alt="Producto Cabina">
+            <div class="card-body">
+              <h5 class="card-title text-center">De cabina</h5>
+              <a href="#" class="btn btn-secondary w-100">Ver productos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card">
+            <img src="assets/img/productos body/Mochila casual.avif" class="card-img-top card-img"
+              alt="Producto Casual">
+            <div class="card-body">
+              <h5 class="card-title text-center">Casuales</h5>
+              <a href="#" class="btn btn-secondary w-100">Ver productos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card">
+            <img src="assets/img/productos body/Mochila Maternal.png" class="card-img-top card-img"
+              alt="Producto Maternal">
+            <div class="card-body">
+              <h5 class="card-title text-center">Maternales</h5>
+              <a href="#" class="btn btn-secondary w-100">Ver productos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card">
+            <img src="assets/img/productos body/Mochila Business.png" class="card-img-top card-img"
+              alt="Producto Business">
+            <div class="card-body">
+              <h5 class="card-title text-center">Business</h5>
+              <a href="#" class="btn btn-secondary w-100">Ver productos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card">
+            <img src="assets/img/productos body/Mochila Notebook.webp" class="card-img-top card-img"
+              alt="Producto Notebook">
+            <div class="card-body">
+              <h5 class="card-title text-center">Para notebook</h5>
+              <a href="#" class="btn btn-secondary w-100  ">Ver productos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
