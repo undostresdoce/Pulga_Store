@@ -1,0 +1,35 @@
+/* Hover para navbar */
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #fd0dd1; /* color temporal */
+  text-decoration: underline;
+}
+
+/*  Transiciones  */
+.navbar-brand,
+.nav-link {
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/*  Página activa */
+.nav-link.active {
+  color: #fd0dd1; /* color temporal */
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/*  Accesibilidad */
+.nav-link:focus {
+  outline: 2px dashed #fd0dd1; /* color temporal */
+  outline-offset: 4px;
+}
+
+/*  Icono del carrito */
+.nav-link i.bi-cart3 {
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover i.bi-cart3 {
+  transform: scale(1.2);
+}
