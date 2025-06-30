@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="assets/js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+    <h1>Formulario de Pago</h1>
+    <form id="formPago">
+        <input type="text" placeholder="Nombre en la Tarjeta" required><br><br>
+        <input type="text" placeholder="Número de Tarjeta" required><br><br>
+        <input type="text" placeholder="Dirección de Envío" required><br><br>
+        <button type="submit">Pagar</button>
+        <button type="button" onclick="location.href='index.html'">Volver</button>
+    </form>
+    <div id="mensaje" style="display:none;">
+        <h2>✅ Compra Aprobada</h2>
+        <button onclick="location.href='seguimiento.html'">Seguimiento de Envío</button>
+    </div>
+    </div>
+</body>
+</html>
