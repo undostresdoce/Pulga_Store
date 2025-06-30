@@ -123,6 +123,10 @@ button:hover {
     margin: 20px 0;
 }
 
+.container2 {
+    text-align: center;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     section:nth-of-type(2) {
