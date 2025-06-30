@@ -22,13 +22,47 @@ body {
     background-color: #ccc9c0
 }
 
+.NombreProducto{
+    font-size: 30px;
+    text-align: left;
+}
+
+.precio{
+    font-size: 20px;
+    text-align: left;
+}
+
+.Descripcion{
+    font-size: 14px;
+    text-align: left;
+}
+
 .containerCarrito {
     background: white;
     padding: 20px;
     max-width: 500px;
-    margin: auto;
-    border-radius: 10px;
+    margin: 0px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.containerFicha {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0px;
+}
+
+.FormulariodePago {
+    align-items: center;
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0px;
+}
+
+.estrellas {
+    color: gold;
+    font-size: 1.5em;
 }
 
 .imgCarrito {
