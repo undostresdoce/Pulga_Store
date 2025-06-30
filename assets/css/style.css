@@ -1,23 +1,45 @@
 body {
-    background-color: #ccc9c0;
-    h1{text-align: center;
-    }
-    
+  background-color: #ccc9c0;
+
+  h1 {
+    text-align: center;
+  }
+
 }
-.car-item{
-    height: 480px;
+
+.car-item {
+  height: 480px;
+}
+
+.car-img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+}
+
+.card-img {
+  max-width: 100%;
+  height: 20em;
+  display: flex;
+}
+
+.card {
+  background-color: #ccc9c0
 }
 
 /*  Página activa */
 .nav-link.active {
-  color: #fd0dd1; /* color temporal */
+  color: #fd0dd1;
+  /* color temporal */
   font-weight: bold;
   text-decoration: underline;
 }
 
 /*  Accesibilidad */
 .nav-link:focus {
-  outline: 2px dashed #fd0dd1; /* color temporal */
+  outline: 2px dashed #fd0dd1;
+  /* color temporal */
   outline-offset: 4px;
 }
 
