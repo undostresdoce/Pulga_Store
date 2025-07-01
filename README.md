@@ -21,7 +21,7 @@
 ---
 
 ##  Estructura del Proyecto
-[Plan de Trabajo]((https://docs.google.com/document/d/1JvW0lJUeniSSc9Wbbtkczv0cmXSlb3Mqm6H78ypBIS0/edit?tab=t.0))
+[Plan de Trabajo](https://docs.google.com/document/d/1JvW0lJUeniSSc9Wbbtkczv0cmXSlb3Mqm6H78ypBIS0/edit?tab=t.0)
 
 Pulga_Store/
 ├── index.html               
