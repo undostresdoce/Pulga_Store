@@ -1,26 +1,33 @@
 body {
-    background-color: #ccc9c0;
-    h1{text-align: center;
-    }
-    
+  background-color: #ccc9c0;
+
+  h1 {
+    text-align: center;
+  }
+
 }
-.car-item{
-    height: 480px;
+
+.car-item {
+  height: 480px;
 }
-.car-img{
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-    width: 100%;
+
+.car-img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
 }
-.card-img{
-    max-width: 100%;
-    height: 20em;
-    display: flex;
+
+.card-img {
+  max-width: 100%;
+  height: 20em;
+  display: flex;
 }
-.card{
-    background-color: #ccc9c0
+
+.card {
+  background-color: #ccc9c0
 }
+
 
 .NombreProducto{
     font-size: 30px;
@@ -134,21 +141,96 @@ button:hover {
         align-items: center;
     }
 
-    header p {
-        font-size: 0.9rem;
-    }
+/*  Página activa */
+.nav-link.active {
+  color: #fd0dd1;
+  /* color temporal */
+  font-weight: bold;
+  text-decoration: underline;
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
+/*  Accesibilidad */
+.nav-link:focus {
+  outline: 2px dashed #fd0dd1;
+  /* color temporal */
+  outline-offset: 4px;
+}
 
-    header p {
-        font-size: 0.8rem;
-    }
+/*  Icono del carrito */
+.nav-link i.bi-cart3 {
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
 
-    footer ul {
-        flex-direction: column;
-    }
+.nav-link:hover i.bi-cart3 {
+  transform: scale(1.2);
+}
+
+/*footer */
+/* Footer general */
+footer {
+  background-color: #212529;
+  color: #ffffff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+/* Títulos de columnas */
+footer h5 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Espaciado entre elementos de lista */
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Enlaces del footer */
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Hover en enlaces */
+footer a:hover {
+  color: #fd0dd1;
+  text-decoration: underline;
+}
+
+/* Hover en íconos */
+footer a:hover i {
+  color: #fd0dd1;
+}
+
+/* Íconos del footer */
+footer i {
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+
+/* Línea divisoria */
+footer hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Texto final */
+footer p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  footer .row {
+    text-align: center;
+  }
+
+  footer .col-md-4 {
+    margin-bottom: 1.5rem;
+  }
 }
